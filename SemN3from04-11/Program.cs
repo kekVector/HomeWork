@@ -3,7 +3,13 @@
 //Вывести квадрат числа 
 
 // int a = int.Parse(Console.ReadLine());
-// Console.WriteLine($"Ваш квадрат числа {a} = {a*a}");
+
+// void Kvadrat(int a)
+// {
+//     Console.WriteLine($"Квадрат числа {a} = {a*a}");
+
+// }
+// Kvadrat(a);
 
 
 
@@ -14,34 +20,45 @@
 
 // int a = 64;
 // int b = 5;
-// if (a == b * b)
+// void Kvd(int a1, int a2)
 // {
-//     Console.WriteLine($" число {a} является квадратом {b}");
+//     if (a1 == a2 * a2)
+//     {
+//         Console.WriteLine($" число {a1} является квадратом {a2}");
+//     }
+//     else
+//     {
+//         Console.WriteLine($" число {a1} не является квадратом {a2}");
+//     }
 // }
-// else
+// Kvd(a,b);
+
+
+
+
+
+// Задача 2. 
+// Даны два числа. Показать большее и меньшее число
+
+// int num1 = 211;
+// int num2 = 35;
+// void more(int a, int b)
 // {
-//     Console.WriteLine($" число {a} неявляется квадратом {b}");
+//     if (a < b)
+//     {
+//             Console.WriteLine("меньшее число " + a);
+//             Console.WriteLine("большее число " + b);
+//         }
+//     else
+//     {
+//             Console.WriteLine("меньшее число " + b);
+//             Console.WriteLine("большее число " + a);
+//         }
 // }
+// more(num1,num2);
 
 
 
-
-
-//Задача 2. 
-//Даны два числа. Показать большее и меньшее число
-
-// int a = 27;
-// int b = 35;
-// if (a < b)
-// {
-//     Console.WriteLine("меньшее число" + a);
-//     Console.WriteLine("большее число" + b);
-// }
-// else
-// {
-//     Console.WriteLine("меньшее число" + b);
-//     Console.WriteLine("большее число" + a);
-// }
 
 
 
@@ -101,14 +118,19 @@
 //     Console.Write(" " + A[index]);
 //     index++;
 // }
-// int max = A[0];
-// for (int i = 1; i < 3; i++)
-//     if (A[i] > max)
-//     {
-//         max = A[i];
-//     }
+// int maxi(int[] array)
+// {
+//     int max = A[0];
+//     for (int i = 1; i < 3; i++)
+//         if (array[i] > max)
+//         {
+//             max = array[i];
+//         }
+//         return max;
+// }
+
 // Console.WriteLine(" ");
-// Console.WriteLine("максимальный элемент: " + max);
+// Console.WriteLine("максимальный элемент: " + maxi(A));
 
 
 
@@ -131,42 +153,47 @@
 //Выяснить является ли число чётным
 // int Number = new Random().Next(1,100);
 
-// if(Number%2 == 0)
+// bool chet(int N)
 // {
-//     Console.WriteLine($"Число {Number} четное");
+//     if(N%2 == 0) return true;    
+//     else return false;
 // }
-// else
-// {
-//     Console.WriteLine($"Число {Number} нечетное");
-
-// }
-
-
-
+// bool ch = chet(Number);
+// if(ch)Console.WriteLine($"Число {Number} четное");
+// else Console.WriteLine($"Число {Number} нечетное");
 
 
 
 //Задача 7. 
 // Показать числа от -N до N 
-// int a = int.Parse(Console.ReadLine());
-// int b = a - 2 * a;
-// for (int index = b; index <= a; index++)
+
+// int num = int.Parse(Console.ReadLine());
+// void PrintFromMinus(int a)
 // {
-//     Console.Write(index + " ");
+//     int b = a - 2 * a;
+//     for (int index = b; index <= a; index++)
+//     {
+//         Console.Write(index + " ");
+//     }
 // }
+// PrintFromMinus(num);
 
 
 
 
 
-//Задача 8.
-//Показать четные числа от 1 до N
+// Задача 8.
+// Показать четные числа от 1 до N
 
 // Console.WriteLine("Введите число : ");
 
-// int Num = int.Parse(Console.ReadLine());
+// int a = int.Parse(Console.ReadLine());
 
-// for(int i=2; i<= Num; i+=2)
+// void chet(int Num)
 // {
-//     Console.Write(" " + i);
+//     for(int i=2; i<= Num; i+=2)
+//     {
+//         Console.Write(" " + i);
+//     }
 // }
+// chet(a);
